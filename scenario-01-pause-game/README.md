@@ -126,22 +126,22 @@ AOB 패턴 (와일드카드 사용):
 - 일시정지 구현의 다양한 접근법
 - 메모리에서 상태 변수 위치 추론
 
-### [2. 메모리 스캔 기법](./02-memory-scanning.md)
+### [2. 메모리 스캔 기법](../getting-started/memory-scanning-guide.md)
 - Cheat Engine을 이용한 값 찾기
 - 동적 메모리 주소 추적
 - 포인터 체인 분석
 
-### [3. 어셈블리 코드 분석](./03-assembly-analysis.md)
+### [3. 어셈블리 코드 분석](../reference/assembly-quick-reference.md)
 - x86-64 조건부 점프 명령어
 - 플래그 레지스터와 비교 연산
 - 게임별 어셈블리 패턴 분석
 
-### [4. 메모리 패치 구현](./04-creating-patch.md)
+### [4. 메모리 패치 구현](../getting-started/memory-patching-guide.md)
 - 안전한 패치 적용 방법
 - 백업 및 복원 메커니즘
 - 에러 처리 및 검증
 
-### [5. DLL 인젝션 완성](./05-dll-injection.md)
+### [5. DLL 인젝션 완성](./example-code/DllMain.cpp)
 - DLL 프로젝트 설정
 - 프로세스 인젝션 기법
 - 키 입력 처리 시스템
