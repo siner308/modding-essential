@@ -4,7 +4,7 @@
 
 ## 📚 학습 방식
 
-이 저장소는 **시나리오 기반 학습**을 통해 게임 모딩 기술을 단계적으로 습득할 수 있도록 구성되었습니다. 각 시나리오는 실제 게임 모드를 예시로 하여 이론과 실습을 병행합니다.
+이 저장소는 **과정 기반 학습**을 통해 게임 모딩 기술을 단계적으로 습득할 수 있도록 구성되었습니다. 각 과정는 실제 게임 모드를 예시로 하여 이론과 실습을 병행합니다.
 
 ## 🚀 시작하기
 
@@ -13,48 +13,47 @@
 - 도구 설치 및 환경 설정
 - 안전한 모딩을 위한 기본 지식
 
-### 2. 학습 경로
+### 2. 추천 학습 경로
+
+이 프로젝트는 최고의 학습 효과를 위해 다음의 점진적인 학습 경로를 추천합니다.
 
 ```
 🟢 입문자
-PAK 모딩 체험 → 일시정지 구현 → FPS 해제 → FromSoft 모딩
-(scenario-01)   (scenario-02)   (02-B)    (scenario-03)
+PAK 모딩 체험 → 게임 일시정지 구현 → FPS 제한 해제 → FromSoftware 게임 모딩
     ↓
-🟡 중급자  
-시각 효과 → 카메라 시스템 → PAK 로더 → 몬스터 대전
-(03-B)     (scenario-04)  (04-B)      (scenario-05)
+🟡 중급자
+시각 효과 수정 → 카메라 시스템 수정 → PAK 모드 로더 시스템 → 몬스터 대전 시스템
     ↓
 🔴 고급자
-DLL 로더 → 고급 기법 → projects/
-(05-B)     (scenario-06)
+DLL 모드 로더 시스템 → 고급 모딩 기법 → 최종 프로젝트
 ```
 
-## 📖 시나리오별 학습 내용
+## 📖 과정별 학습 내용
 
 ### 🟢 초급 (Beginner)
 
-#### [Scenario 01: PAK 모딩 체험](./scenario-01-pak-modding/)
+#### [PAK 모딩 체험](./scenario-pak-modding/)
 - **목표**: UETools로 언리얼 엔진 게임 모딩 첫 경험
 - **핵심 기술**: PAK 파일 설치, 콘솔 명령어, Engine.ini 설정
 - **예제 게임**: Lies of P, 기타 언리얼 엔진 게임
 - **학습 시간**: 3-5일
 - **접근법**: UETools (즉시 체험 가능)
 
-#### [Scenario 02: 게임 일시정지 구현](./scenario-02-pause-game/)
+#### [게임 일시정지 구현](./scenario-pause-game/)
 - **목표**: 온라인 게임에 일시정지 기능 추가
 - **핵심 기술**: 메모리 스캔, 어셈블리 기초, 조건부 점프
 - **예제 게임**: Elden Ring, Dark Souls 시리즈
 - **학습 시간**: 1-2주
 - **접근법**: 바이너리 모딩 (본격적인 모딩 시작)
 
-#### [Scenario 02-B: FPS 제한 해제](./scenario-02-unlock-fps/)
+#### [FPS 제한 해제](./scenario-unlock-fps/)
 - **목표**: 60FPS 제한을 120FPS, 144FPS 또는 무제한으로 해제
 - **핵심 기술**: 부동소수점 수치 조작, 메모리 패치, 성능 최적화
 - **예제 게임**: EldenRing, Unity/언리얼 게임들
 - **학습 시간**: 1-2주
 - **접근법**: 바이너리 모딩 (수치 조작)
 
-#### [Scenario 03: FromSoftware 게임 모딩](./scenario-03-fromsoftware-modding/)
+#### [FromSoftware 게임 모딩](./scenario-fromsoftware-modding/)
 - **목표**: Dantelion 엔진 기반 게임의 전문 모딩 도구 활용
 - **핵심 기술**: DSMapStudio, Smithbox, Mod Engine 2, 파라미터 편집
 - **예제 게임**: Elden Ring, Dark Souls 시리즈, Sekiro
@@ -63,28 +62,28 @@ DLL 로더 → 고급 기법 → projects/
 
 ### 🟡 중급 (Intermediate)
 
-#### [Scenario 03-B: 시각 효과 수정](./scenario-03-visual-effects/)
+#### [시각 효과 수정](./scenario-visual-effects/)
 - **목표**: 게임의 시각적 효과를 실시간으로 수정하기
 - **핵심 기술**: DirectX 후킹, 셰이더 조작, 포스트 프로세싱
 - **예제**: ReShade 스타일 인젝터, 커스텀 필터
 - **학습 시간**: 2-3주
 - **접근법**: 그래픽스 파이프라인 조작
 
-#### [Scenario 04: 카메라 시스템 수정](./scenario-04-camera-system/)
+#### [카메라 시스템 수정](./scenario-camera-system/)
 - **목표**: FOV 조정, 프리 카메라, 카메라 동작 변경
 - **핵심 기술**: 3D 수학, 함수 후킹, 동적 패치
 - **예제 게임**: FPS/TPS 게임들
 - **학습 시간**: 2-3주
 - **접근법**: 바이너리 모딩 + 3D 수학
 
-#### [Scenario 04-B: PAK 모드 로더 시스템](./scenario-04-pak-loader/)
+#### [PAK 모드 로더 시스템](./scenario-pak-loader/)
 - **목표**: Interpose 같은 PAK 기반 모드 로더 이해하기
 - **핵심 기술**: PAK 우선순위, 모듈화 설계, 호환성 관리
 - **예제**: Interpose Mod Loader, AISpawner.pak
 - **학습 시간**: 1-2주
 - **접근법**: PAK 모딩 (고급)
 
-#### [Scenario 05: 몬스터 대전 시스템](./scenario-05-monster-battle/)
+#### [몬스터 대전 시스템](./scenario-monster-battle/)
 - **목표**: AI 몬스터/보스 간 대전 시스템 구축
 - **핵심 기술**: AI 팩션 조작, 이벤트 스크립팅, 관전 모드
 - **예제 게임**: Elden Ring, Dark Souls, Unity/언리얼 게임
@@ -93,14 +92,14 @@ DLL 로더 → 고급 기법 → projects/
 
 ### 🔴 고급 (Advanced)
 
-#### [Scenario 05-B: DLL 모드 로더 시스템](./scenario-05-mod-loader/)
+#### [DLL 모드 로더 시스템](./scenario-mod-loader/)
 - **목표**: 범용 DLL 기반 모드 로더 시스템 구축
 - **핵심 기술**: DLL 인젝션, 프록시 기법, 아키텍처 설계
 - **예제**: EldenRing ModLoader, 기타 게임 로더들
 - **학습 시간**: 3-4주
 - **접근법**: 바이너리 모딩 (고급)
 
-#### [Scenario 06: 고급 모딩 기법](./scenario-06-advanced-techniques/)
+#### [고급 모딩 기법](./scenario-advanced-techniques/)
 - **목표**: 안티 디버그 우회, 코드 동굴, 고급 후킹
 - **핵심 기술**: 리버스 엔지니어링, 보안 우회, 언패킹
 - **예제**: 보호 기법이 적용된 게임들, 패킹된 실행파일
@@ -131,43 +130,29 @@ DLL 로더 → 고급 기법 → projects/
 ## 🎯 학습 목표별 추천 경로
 
 ### 🚀 빠른 모딩 체험 (즉시 시작)
-```
-getting-started → scenario-01 (PAK 모딩) → UETools 활용
-```
+`getting-started` → `scenario-pak-modding` → UETools 활용
 
 ### 🎮 게임 트레이너 만들기
-```
-getting-started → scenario-02 → scenario-03 → projects/simple-trainer
-```
+`getting-started` → `scenario-pause-game` → `scenario-unlock-fps` → `projects/simple-trainer`
 
 ### 📦 PAK 모딩 마스터
-```
-scenario-01 → scenario-04 → reference/unreal-engine-modding
-```
+`scenario-pak-modding` → `scenario-pak-loader` → `reference/unreal-engine-modding.md`
 
 ### ⚔️ FromSoftware 게임 모딩
-```
-scenario-03 → reference/soulsmodding-wiki → community/discord
-```
+`scenario-fromsoftware-modding` → `reference/unreal-engine-modding.md`
 
 ### 🥊 AI 대전 시스템 개발
-```
-scenario-03 → scenario-05 → projects/tournament-system
-```
+`scenario-fromsoftware-modding` → `scenario-monster-battle`
 
 ### 🎨 시각적 모드 개발
-```
-getting-started → scenario-06 → projects/visual-enhancement
-```
+`getting-started` → `scenario-visual-effects`
 
 ### 🏗️ 모드 시스템 구축
-```
-getting-started → scenario-05 → scenario-06 → projects/mod-framework
-```
+`getting-started` → `scenario-mod-loader` → `scenario-advanced-techniques` → `projects/mod-framework`
 
-## 📋 각 시나리오 구성
+## 📋 각 과정 구성
 
-모든 시나리오는 다음과 같은 5단계 학습 구조를 따릅니다:
+모든 과정는 다음과 같은 5단계 학습 구조를 따릅니다:
 
 1. **📖 이론 학습** - 기본 개념과 원리 이해
 2. **🔧 도구 사용** - 필요한 도구들의 사용법 습득
@@ -212,7 +197,7 @@ getting-started → scenario-05 → scenario-06 → projects/mod-framework
 
 이 프로젝트는 오픈소스이며 모든 기여를 환영합니다:
 
-- 새로운 시나리오 추가
+- 새로운 과정 추가
 - 게임별 예제 코드 기여  
 - 문서 개선 및 번역
 - 오류 신고 및 수정
